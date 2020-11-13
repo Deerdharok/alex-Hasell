@@ -1,19 +1,6 @@
 
-producto a listaprecio = do
-    if (a > 0) 
-        then do 
-            putStrLn ("producto " ++ show (a) ) 
-            x <- readLn :: IO Int
-            let listanuevo = agregarelemento listaprecio x
-            producto (a-1) (listanuevo)
-
-        else putStrLn ("sum listaprecio" ++ show listaprecio)
-    
-agregarelemento :: [Int] -> Int -> [Int]
-agregarelemento lista x = lista ++ [x]
-
 mesesnom=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
-pidedia = do
+main = do
     let dias =[1..31]
     putStrLn ("introudce tu dia de nacimeinto: ") 
     x <- readLn :: IO Int
